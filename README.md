@@ -1,14 +1,11 @@
 # 🐬Dash Notes📝
-An AI learning support (note-taking) app brought to you by International School of Panama
-
+*An AI learning support (note-taking) app*
 
 ## Background Story
-When one of our learning support teachers asked me if there were any AI tools that would take notes for students, I could think of several options, but decided to create one myself - not only to use this as a learning opportunity, but also for obvious privacy reasons.
+When one of our learning support teachers asked me if there were any AI tools that would take notes for students, I could think of several solutions, but decided to create one myself and use this as an opportunity to test whether open-source resources (which help solve issues of privacy and cost) would be performant enough to be fit for purpose.
 
 ## An Open-Source Proof of Concept
-To be clear, Dash Notes (named after our dolphin mascot at International School of Panama) is not only in beta: it is a proof of concept. It will transcribe and summarize class recordings for you and your students - but it will make you wait for it, and might very well make mistakes.
-
-Dash Notes should thus be used with caution. This app is the first to come out of our nascent AI Lab here at ISP, and inherent to this experiment was the idea of testing the viability of using 100% open-source resources. The output could be improved by using the most performant models, but Dash Notes can be used without any API key or cost -- it is plug-and-play and free for anyone to use.
+To be clear, Dash Notes (named after our dolphin mascot at International School of Panama) is not only in beta: it is a proof of concept. It will transcribe and summarize voice recordings (such as class recordings) - but it will make you wait for it, and might very well make mistakes.
 
 ## Transcription and Summarization Tasks
 The transcription is operated through OpenAI Whisper, an automatic speech recognition system designed to convert spoken language into written text. Made available as an open-source project, Whisper is free to use. Running Dash Notes locally also means that your audio (voice recording) will be processed on your computer, and not shared with anyone.
@@ -35,3 +32,11 @@ pip install whisper
 ```
 streamlit run DashNotes.py
 ```
+
+## Alternatives
+The output could be improved by using proprietary models and various paid subscriptions, but Dash Notes can be used without any API key or cost -- it is plug-and-play and free for anyone to use. All you need is a device to record the mp3 and run the code (if you use Voice Notes on an iPhone, websites such as *freeconvert.com* will convert the m4a to mp3 for you). 
+
+I will probably create a GPT4-based version in the future, though. If you are more interested in the functionality than in the underlying experiment, many videochat note-taking apps (such as *Fathom*) can already help.
+
+## 🤗 HuggingFace Space
+You can also test Dash Notes at https://huggingface.co/spaces/jeremierostan/DashNotes - but your audio will obviosuly not be processed locally.
