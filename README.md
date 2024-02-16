@@ -1,2 +1,2 @@
 # 📝 classNotes
-Transcribes, summarizes, and checks understanding of class recordings
+Transcribes and summarizes class recordings
