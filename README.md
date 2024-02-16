@@ -6,9 +6,9 @@ An AI learning support (note-taking) app brought to you by International School 
 When one of our learning support teachers asked me if there were any AI tools that would take notes for students, I could think of several options, but decided to create one myself - not only to use this as a learning opportunity, but also for obvious privacy reasons.
 
 ## An Open-Source Proof of Concept
-To be clear, Dash Notes (named after our dolphin mascot at International School of Panama) is not only in beta: it is little more than a proof of concept. It will transcribe and summarize class recordings for you and your students - but it will make you wait for it, and might very well make mistakes.
+To be clear, Dash Notes (named after our dolphin mascot at International School of Panama) is not only in beta: it is a proof of concept. It will transcribe and summarize class recordings for you and your students - but it will make you wait for it, and might very well make mistakes.
 
-Dash Notes should thus be used with caution (it can and will make mistakes). This app is the first to come out of our nascent AI Lab here at ISP, and inherent to this experiment was the idea of testing the viabilty of using 100% open-source resources. The output could be improved by using the most performant models, but Dash Notes can be used without any APY key or cost -- it is plug-and-play and free for anyone to use.
+Dash Notes should thus be used with caution. This app is the first to come out of our nascent AI Lab here at ISP, and inherent to this experiment was the idea of testing the viabilty of using 100% open-source resources. The output could be improved by using the most performant models, but Dash Notes can be used without any APY key or cost -- it is plug-and-play and free for anyone to use.
 
 ## Transcription and Summarization Tasks
 The transcription is operated through OpenAI Whisper, an automatic speech recognition system designed to convert spoken language into written text. Made available as an open-source project, Whisper is free to use. Running Dash Notes locally also means that your audio (voice recording) will be processed on your computer, and not shared with anyone.
