@@ -34,7 +34,7 @@ streamlit run DashNotes.py
 ```
 
 ## Alternatives
-The output could be improved by using proprietary models and various paid subscriptions, but Dash Notes can be used without any API key or cost -- it is plug-and-play and free for anyone to use. All you need is a device to record the mp3 and run the code (if you use Voice Notes on an iPhone, websites such as *freeconvert.com* will convert the m4a to mp3 for you). 
+The output could be improved (and made faster!) by using proprietary models and various paid subscriptions, but Dash Notes can be used without any API key or cost -- it is plug-and-play and free for anyone to use. All you need is a device to record the mp3 and run the code (if you use Voice Notes on an iPhone, websites such as *freeconvert.com* will convert the m4a to mp3 for you). 
 
 I will probably create a GPT4-based version in the future, though. If you are more interested in the functionality than in the underlying experiment, many videochat note-taking apps (such as *Fathom*) can already help.
 
