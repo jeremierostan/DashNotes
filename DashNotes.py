@@ -24,9 +24,9 @@ def generate_summary(text):
     bullet_points = [summarizer(segment, max_length=100, min_length=5, do_sample=False)[0]['summary_text'] for segment in segments]
     return '\n'.join([f"• {point}" for point in bullet_points])
 
-st.title('📝 classNotes')
+st.title('🐬Dash Notes📝')
 
-audio_file = st.file_uploader("Upload an MP3 voice recording", type=['mp3'])
+audio_file = st.file_uploader("Upload an MP3 class recording", type=['mp3'])
 
 if audio_file is not None:
     with tempfile.NamedTemporaryFile(delete=False, suffix='.mp3') as tmp:
