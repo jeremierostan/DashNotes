@@ -5,7 +5,6 @@ import tempfile
 
 model = whisper.load_model("tiny")
 
-# Initialize NLP pipeline for summarization
 summarizer = pipeline("summarization", model="facebook/bart-large-cnn")
 
 def transcribe_audio(audio_path):
@@ -13,12 +12,10 @@ def transcribe_audio(audio_path):
     return result['text']
 
 def segment_text(text, segment_size=500):
-    """Split the text into manageable segments."""
     words = text.split()
     return [' '.join(words[i:i+segment_size]) for i in range(0, len(words), segment_size)]
 
 def generate_summary(text):
-    """Generate a bullet-point summary for the text."""
     segments = segment_text(text)
     bullet_points = [summarizer(segment, max_length=100, min_length=5, do_sample=False)[0]['summary_text'] for segment in segments]
     return '\n'.join([f"• {point}" for point in bullet_points])
