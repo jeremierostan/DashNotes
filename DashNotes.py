@@ -3,8 +3,7 @@ from transformers import pipeline
 import whisper
 import tempfile
 
-# Load Whisper model for transcription
-model = whisper.load_model("base")
+model = whisper.load_model("tiny")
 
 # Initialize NLP pipeline for summarization
 summarizer = pipeline("summarization", model="facebook/bart-large-cnn")
